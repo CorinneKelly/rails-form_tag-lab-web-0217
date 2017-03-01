@@ -30,8 +30,9 @@ describe 'form page' do
     fill_in 'last_name', with: "Tyrell"
 
     click_on "Submit Student"
-
+    # binding.pry
     expect(page).to have_content("Margaery")
+    # binding.pry
   end
 end
 
